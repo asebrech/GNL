@@ -6,13 +6,12 @@
 /*   By: asebrech <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 14:06:32 by asebrech          #+#    #+#             */
-/*   Updated: 2021/04/09 15:51:38 by asebrech         ###   ########.fr       */
+/*   Updated: 2021/04/09 16:43:49 by asebrech         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-
-#define BUFFER_SIZE 4096
+#include <stdio.h>
 
 int	get_next_line(int fd, char **line)
 {
@@ -21,5 +20,6 @@ int	get_next_line(int fd, char **line)
 
 	ret = read(fd, buf, BUFFER_SIZE);
 	buf[ret] = '\0';
+	printf("%s\n", buf);
 	return (ret);
 }

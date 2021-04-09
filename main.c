@@ -48,11 +48,12 @@ int	main()
 {
 	s_fd	*fds;
 	int		ret;
-	char	**line;
+	char	*line;
+	char	buf[BUFFER_SIZE + 1];
 
 	line = NULL;
 	fds = ft_open();
-	ret = get_next_line(fds->fd1, line);
+	ret = get_next_line(fds->fd1, &line);
 	printf("next line : %d\n", ret);
 	ft_close(fds);
 
