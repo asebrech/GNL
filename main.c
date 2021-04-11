@@ -30,7 +30,7 @@ s_fd	*ft_open(void)
 	return (fds);
 }
 
-void	*ft_close(s_fd *fds)
+void	ft_close(s_fd *fds)
 {
 	close(fds->fd1);
 	if (fds->fd1 == -1)
@@ -49,12 +49,21 @@ int	main()
 	s_fd	*fds;
 	int		ret;
 	char	*line;
-	char	buf[BUFFER_SIZE + 1];
 
 	line = NULL;
 	fds = ft_open();
 	ret = get_next_line(fds->fd1, &line);
 	printf("next line : %d\n", ret);
+	printf("string : %s\n", line);
+	ret = get_next_line(fds->fd1, &line);
+	printf("next line : %d\n", ret);
+	printf("string : %s\n", line);
+	ret = get_next_line(fds->fd1, &line);
+	printf("next line : %d\n", ret);
+	printf("string : %s\n", line);
+	ret = get_next_line(fds->fd1, &line);
+	printf("next line : %d\n", ret);
+	printf("string : %s\n", line);
 	ft_close(fds);
 
 	return (0);

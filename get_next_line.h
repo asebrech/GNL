@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asebrech <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asebrech <asebrech@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/08 14:08:14 by asebrech          #+#    #+#             */
-/*   Updated: 2021/04/08 14:15:07 by asebrech         ###   ########.fr       */
+/*   Created: 2021/04/10 15:50:57 by asebrech          #+#    #+#             */
+/*   Updated: 2021/04/11 19:28:20 by asebrech         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,10 @@
 # include <stdlib.h>
 
 int	get_next_line(int fd, char **line);
-
+size_t	ft_strlen(const char *s);
+char	*ft_strdup(const char *s1);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strcpy(char *dst, char *src);
+	
 #endif
