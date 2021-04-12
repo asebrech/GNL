@@ -6,11 +6,11 @@
 /*   By: asebrech <asebrech@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/10 15:48:24 by asebrech          #+#    #+#             */
-/*   Updated: 2021/04/12 11:48:08 by asebrech         ###   ########.fr       */
+/*   Updated: 2021/04/12 11:49:07 by asebrech         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {
